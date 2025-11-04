@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Aryan Kumar Maurya — Portfolio</title>
+    <meta
+      name="description"
+      content="Cinematic portfolio of Aryan Kumar Maurya — Frontend Developer & CS Student."
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo">
+          <div class="badge">AM</div>
+          <div>
+            <div style="font-weight: 800">Aryan Kumar Maurya</div>
+            <div class="muted" style="font-size: 12px">• UPES</div>
+          </div>
+        </div>
+
+        <nav>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+          <a
+            href="Aryan_Kumar_Maurya_Resume.pdf"
+            class="btn btn-primary"
+            download
+            style="margin-left: 8px"
+            >Resume</a
+          >
+        </nav>
+      </header>
+
+      <!-- HERO -->
+      <section class="hero reveal">
+        <div class="poster">
+          <img
+            src="http://static.photos/technology/640x360/27"
+            alt="Aryan poster"
+          />
+        </div>
+        <div class="hero-body">
+          <div class="now">NOW SHOWING</div>
+          <div class="tick"></div>
+          <h1 class="title">Aryan Kumar Maurya</h1>
+          <div class="typewriter" id="typewriter">
+            Web Developer • Frontend Engineer
+          </div>
+          <p class="muted" style="margin-top: 14px">
+            I create cinematic, responsive user interfaces using HTML, CSS &
+            JavaScript. I also explore low-level systems with C. Open to
+            internships & front-end roles.
+          </p>
+          <div class="hero-cta">
+            <button class="btn btn-primary" onclick="location.href='#contact'">
+              Contact Me
+            </button>
+            <button
+              class="btn btn-ghost"
+              onclick="document.querySelector('#projects .carousel').scrollBy({left:400, behavior:'smooth'})"
+            >
+              Browse Projects
+            </button>
+            <div
+              style="
+                margin-left: auto;
+                display: flex;
+                gap: 10px;
+                align-items: center;
+              "
+            >
+              <a
+                href="https://github.com/Aryanmaurya5253"
+                target="_blank"
+                aria-label="GitHub"
+                ><i data-feather="github"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/aryan-maurya-168008372/"
+                target="_blank"
+                aria-label="LinkedIn"
+                ><i data-feather="linkedin"></i
+              ></a>
+              <a href="mailto:Aryanmaurya0065@gmail.com" aria-label="Email"
+                ><i data-feather="mail"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="section reveal">
+        <div class="contact-card">
+          <h2>About</h2>
+          <p class="muted" style="margin-top: 12px">
+            I am a motivated first-year student at UPES with a strong foundation
+            in web development and programming. I love creating cinematic
+            interfaces with a focus on UX and subtle motion. I also enjoy
+            exploring compilers and system internals using C.
+          </p>
+
+          <div class="info-grid">
+            <div>
+              <h3>Personal</h3>
+              <div class="muted">
+                DOB: 27/11/2006<br />Nationality: Indian<br />Parents: Mr. Ashok
+                Kumar Maurya 
+              </div>
+            </div>
+            <div>
+              <h3>Education</h3>
+              <div class="muted">
+                Seth M.R. Jaipuria School <br />UPES
+                (1st Semester) 
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS -->
+      <section id="skills" class="section reveal">
+        <h2>Skills & Hobbies</h2>
+        <div class="skills-grid">
+          <div class="skills-column">
+            <div class="skill">
+              <div class="label">
+                <div>Frontend</div>
+                <div class="muted">90%</div>
+              </div>
+              <div class="bar">
+                <div class="bar-fill" data-fill="90%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="label">
+                <div>Backend</div>
+                <div class="muted">75%</div>
+              </div>
+              <div class="bar">
+                <div class="bar-fill" data-fill="75%"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="label">
+                <div>UI/UX</div>
+                <div class="muted">85%</div>
+              </div>
+              <div class="bar">
+                <div class="bar-fill" data-fill="85%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="hobbies">
+            <h3>Hobbies</h3>
+            <div class="muted">
+              Sketching<br />Coding<br />Reading & Movies<br />Solving
+              real-world problems
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="section reveal">
+        <h2>Featured Projects</h2>
+        <div class="carousel" id="carousel">
+          <div class="tile">
+            <img
+              src="https://storage.googleapis.com/crio-content-container-assets/ME_ME_PROJECT_AMAZON_CLONE_REACT_MODULE_ME_PROJECT_AMAZON_CLONE_REACT_MODULE_AMAZON_CLONE_REACT_5_sample_amazon_screenshot_1.png"
+              alt="Amazon Clone poster"
+            />
+            <div class="meta">
+              <h3>Amazon Clone</h3>
+              <div class="project-tags">
+                <span class="tag">HTML</span><span class="tag">CSS</span><SPAn class="tag">JS</SPAn>
+              </div>
+              <a href="amazon-clone.html" class="btn btn-primary small"
+                >View</a
+              >
+            </div>
+          </div>
+
+          <div class="tile">
+            <img
+              src="https://user-images.githubusercontent.com/77545230/195864518-3e75198b-9829-4a40-af02-a636abc188c0.png"
+              alt="Spotify Clone poster"
+            />
+            <div class="meta">
+              <h3>Spotify Clone</h3>
+              <div class="project-tags">
+               <span class="tag">HTML</span><span class="tag">CSS</span><SPAn class="tag">JS</SPAn>
+              </div>
+              <a
+                href="spotify-clone.html"
+                class="btn btn-primary small"
+                >View</a
+              >
+            </div>
+          </div>
+
+          <div class="tile">
+            <img
+              src="https://localdab.org/wp-content/uploads/2022/11/Compiler-2-1536x647.jpg"
+              alt="Compiler poster"
+            />
+            <div class="meta">
+              <h3>Compiler (C)</h3>
+              <div class="project-tags">
+                <span class="tag">C</span><span class="tag">Systems</span>
+              </div>
+              <a href="compiler.html" class="btn btn-primary small"
+                >View</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section reveal">
+        <div class="contact-card">
+          <h2>Contact</h2>
+          <div class="contact-flex">
+            <div>
+              <p class="muted">
+                Email:
+                <a href="mailto:Aryanmaurya0065@gmail.com" class="muted"
+                  >Aryanmaurya0065@gmail.com</a
+                >
+              </p>
+              <p class="muted">
+                Address:  Varanasi
+              </p>
+            </div>
+            <form id="contactForm">
+              <label class="muted">Name</label>
+              <input name="from_name" required placeholder="Your name" />
+              <label class="muted">Email</label>
+              <input
+                name="from_email"
+                type="email"
+                required
+                placeholder="you@domain.com"
+              />
+              <label class="muted">Message</label>
+              <textarea
+                name="message"
+                rows="5"
+                required
+                placeholder="Write your message"
+              ></textarea>
+              <button type="submit" class="btn btn-primary full">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="muted">
+          © <span id="year"></span> Aryan Kumar Maurya • Built with HTML, CSS & JS
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
